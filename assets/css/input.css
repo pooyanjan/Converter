@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-black
+}
+
+.container{
+    @apply w-full h-96
+}
+
+.row{
+    @apply /*w-[1200px] h-[260px]*/ w-full h-[260px]  mt-10  gap-5  grid grid-cols-3 
+}
+
+h1{
+    @apply flex justify-center mt-2 font-bold text-2xl
+}
+h2{
+    @apply font-bold text-sm
+}
+
+/***** converter *****/
+
+.converter1{
+    @apply bg-slate-400 /*w-[350px]*/ rounded-md  p-2 w-full h-full
+}
+.converter2{
+    @apply bg-slate-400 /*w-[350px]*/ rounded-md   p-2   w-full h-full
+}
+.converter3{
+    @apply bg-slate-400 /*w-[350px]*/ rounded-md    p-2   w-full h-full
+}
+
+
+/***** Input & Output *****/
+
+#input{
+    @apply mt-5
+}
+
+#output{
+    @apply mt-5
+}
+
+#input2{
+    @apply mt-5
+}
+
+#output2{
+    @apply mt-5
+}
+
+#input3{
+    @apply mt-5
+}
+
+#output3{
+    @apply mt-5
+}
+
+input{
+    @apply w-[120px] h-10 bg-slate-200 rounded-md focus:bg-green-300 text-center
+}
+
+
+/***** Convert Button *****/
+
+button{
+    @apply bg-blue-600 w-[150px] h-[40px] rounded-2xl active:bg-green-500 transition-all duration-100
+}
+
+#btn1 {
+    @apply flex justify-center items-center mt-5 text-yellow-50
+}
+
+#btn2 {
+    @apply flex justify-center items-center mt-5 text-yellow-50
+}
+
+#btn3 {
+    @apply flex justify-center items-center mt-5 text-yellow-50
+}
+
+
+/*** Media Query ***/
+@media screen and (max-width:1070px) {
+    .row {
+        @apply grid grid-cols-2
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .row {
+        @apply grid grid-cols-1
+    }
+    
+}
